@@ -6,6 +6,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 40px;
+
 }
    
 
@@ -18,11 +19,22 @@ width: 70px;
 height: 70px;
 }
 
-
+.link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .link>a{
     display: flex;
-    flex-direction: column;
+    
    color: white;
     text-decoration: none;
+    font-family: $fontA;
+}
+
+.link>img{
+    width: 60%;
+    margin-top: 10%;
 }

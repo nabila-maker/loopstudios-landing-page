@@ -6,8 +6,12 @@ body {
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   scroll-behavior: smooth;
+}
+
+h1, h2, figcaption {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
 }
 
 .menub {
@@ -46,7 +50,7 @@ html {
 .burger, .menu > a {
   /* background: none; */
   padding: 0 0 10px 10px;
-  z-index: 1;
+  z-index: 15;
 }
 
 .burger span {
@@ -85,6 +89,11 @@ header {
   height: 101vh;
   display: flex;
   flex-direction: column;
+  align-items: space-around;
+}
+
+.logo {
+  z-index: 6;
 }
 
 img {
@@ -95,16 +104,18 @@ img {
 .head {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.text {
+body > header > h1 {
   display: flex;
-  justify-content: center;
   color: white;
   border: 2px solid white;
-  width: 60%;
-  text-align: center;
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  align-items: center;
+  text-align: left;
 }
 
 footer {
@@ -126,11 +137,75 @@ footer {
   height: 70px;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .link > a {
   display: flex;
-  flex-direction: column;
   color: white;
   text-decoration: none;
+  font-family: "Alata", sans-serif;
+}
+
+.link > img {
+  width: 60%;
+  margin-top: 10%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20% 0 20%;
+}
+
+main > img, figure > img {
+  width: 85%;
+}
+
+h2 {
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+p {
+  color: #8c8c8c;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  font-size: 1.1rem;
+  font-family: "Alata", sans-serif;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: -1000;
+}
+
+figcaption {
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+  width: 30%;
+}
+
+body > main > button {
+  border: 1px solid black;
+  background: white;
+  font-family: "Alata", sans-serif;
+  width: 40%;
+  height: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

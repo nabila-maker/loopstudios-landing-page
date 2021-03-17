@@ -1,5 +1,11 @@
+
+@import "./base/typo.scss";
 @import "base/reset.scss";
+@import "./base/color.scss";
+
 
 @import "components/burger.scss";
 @import "../css/layout/header.scss";
-@import "../css/layout/footer.scss"
+@import "../css/layout/footer.scss";
+@import "../css/layout/main.scss";
+@import "../css/components/button.scss"

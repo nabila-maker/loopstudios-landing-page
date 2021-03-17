@@ -26,6 +26,7 @@
 .menu-open{
     transform: translateX(0);
     display: flex;
+   
 }
 .menu a{
     margin-left:0;
@@ -41,7 +42,7 @@
 .burger, .menu > a{
     /* background: none; */
     padding: 0 0 10px 10px;
-     z-index: 1;
+     z-index: 15;
 }
 
 .burger span{
