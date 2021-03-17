@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  width: 100%;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.menub {
+  display: none;
+}
+
+/* menu burger */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 5px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.menu-open {
+  transform: translateX(0);
+  display: flex;
+}
+
+.menu a {
+  margin-left: 0;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.burger, .menu > a {
+  /* background: none; */
+  padding: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.burger span {
+  margin: 6px 0;
+  width: 40px;
+  height: 5px;
+  background: white;
+  border-radius: 54px;
+  display: block;
+  transition: 0.5s;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger-cross span {
+  background-color: white;
+}
+
+.burger-cross span:first-child {
+  transform: rotate(45deg) translate(7px, 8px);
+}
+
+.burger-cross span:last-child {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.burger-cross span:nth-child(2) {
+  opacity: 0;
+}
+
+header {
+  background: url(../images/mobile/image-hero.jpg) no-repeat center/cover;
+  height: 101vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 40%;
+  object-fit: contain;
+}
+
+.head {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+  width: 60%;
+  text-align: center;
+}
+
+footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.media {
+  display: flex;
+}
+
+.media > a {
+  width: 70px;
+  height: 70px;
+}
+
+.link > a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

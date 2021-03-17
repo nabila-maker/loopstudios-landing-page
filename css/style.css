@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.menub {
+  display: none;
+}
+
+/* menu burger */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu a {
+  margin-left: 0;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.burger, .menu > a {
+  /* background: none; */
+  padding: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.burger span {
+  margin: 6px 0;
+  width: 40px;
+  height: 5px;
+  background: black;
+  border-radius: 54px;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger-cross span {
+  background-color: white;
+}
+
+.burger-cross span:first-child {
+  -webkit-transform: rotate(45deg) translate(7px, 8px);
+          transform: rotate(45deg) translate(7px, 8px);
+}
+
+.burger-cross span:last-child {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.burger-cross span:nth-child(2) {
+  opacity: 0;
+}
+
+header {
+  background: url(../images/mobile/image-hero.jpg) no-repeat center/cover;
+  width: 20%;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  width: 20%;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
